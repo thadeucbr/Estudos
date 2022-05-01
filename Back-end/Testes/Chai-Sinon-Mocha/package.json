@@ -1,0 +1,26 @@
+{
+  "name": "Testes-Chai-Sinon-Mocha",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/thadeucbr/Testes-Chai-Sinon-Mocha.git",
+  "author": "Thadeu Castelo Branco Ramos <thadeucbr@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon ./src/server.js",
+    "test": "mocha ./src/**/*.spec.js",
+    "test-dev": "mocha --watch ./src/**/*.spec.js",
+    "test-coverage": "nyc mocha ./src/**/*.spec.js --exit"
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "mysql2": "^2.3.3"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^9.2.1",
+    "nodemon": "^2.0.15",
+    "nyc": "^15.1.0",
+    "sinon": "^13.0.1"
+  }
+}
