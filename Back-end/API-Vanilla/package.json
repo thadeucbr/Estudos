@@ -1,0 +1,14 @@
+{
+  "name": "node-vanilla-api",
+  "version": "1.0.0",
+  "main": "app.js",
+  "repository": "https://github.com/thadeucbr/node-vanilla-api.git",
+  "author": "Thadeu Castelo Branco Ramos <thadeucbr@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "mysql2": "^2.3.3"
+  },
+  "scripts": {
+    "start": "node app.js"
+  }
+}
