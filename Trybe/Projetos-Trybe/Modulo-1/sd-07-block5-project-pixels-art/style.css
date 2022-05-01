@@ -1,0 +1,32 @@
+.box {
+  border: 1px solid black;
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+}
+
+/* Fundo do seletor obrigatório */
+.black {
+  background-color: black;
+}
+
+/* Quadrados do nosso quadro */
+.pixel {
+  background-color: white;
+  border: 1px solid black;
+  display: inline-block;
+  height: 40px;
+  margin-left: -5px;
+  width: 40px;
+}
+
+/* Propriedades que quebram as linhas do nosso quadro */
+.col {
+  display: block;
+  margin-top: -5px;
+}
+
+/* Espaçador para tirar o quadro de cima do botão VQV */
+.space {
+  margin-bottom: 10px;
+}
