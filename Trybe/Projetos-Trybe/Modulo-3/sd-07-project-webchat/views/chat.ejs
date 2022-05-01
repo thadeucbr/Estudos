@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/socket.io/socket.io.js"></script>
+    <link href="./index.css" rel="stylesheet" type="text/css">
+    <title>Chat do Thadeu</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="users">
+      <ul id="users">
+        <li>Usuários conectados: </li>
+        <li id="currentUser" data-testid="online-user"></li>
+      </ul>
+      <form action="" class="formUsers">
+        <input id="changeUserName" data-testid="nickname-box" autocomplete="off" placeholder="Mude seu nome"/>
+        <button id="userButton" data-testid="nickname-button">Send</button>
+      </form>
+    </div>
+    <div class="messages">
+      <ul id="messages">
+        <% messages.forEach((message) => { %>
+        <li data-testid="message">
+          <%= `${message.timestamp} - ${message.nickname}: ${message.chatMessage}` %>
+        </li>
+        <% }) %>
+      </ul>
+      <form id="chat" action="">
+        <input id="messageInput" data-testid="message-box" autocomplete="off" placeholder="Escreva sua mensagem"/>
+        <button id="messageButton" data-testid="send-button">Send</button>
+      </form>
+    </div>
+    </container>
+    <script src="./chat.js"></script>
+  </body>
+</html>
